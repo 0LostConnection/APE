@@ -25,7 +25,7 @@ final ao consumidor.
 
 $$\frac{c}{5}=\frac{F-32}{9}$$
 
-$$Exemplo: 100*°C* = 212*F*$$
+$$Exemplo: 100°C=212F$$
 
 9. Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno. Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. Fórmula para o cálculo da média final é:
 
