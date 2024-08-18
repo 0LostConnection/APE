@@ -11,7 +11,7 @@ retângulo.
 pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
 
 4. Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos
-e válidos. Calcular e escrever o percentual que cada um representa em relalão ao total de eleitores.
+e válidos. Calcular e escrever o percentual que cada um representa em relacão ao total de eleitores.
 
 5. Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular
 e escrever o valor do novo salário.
