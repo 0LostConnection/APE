@@ -3,6 +3,8 @@
 int main() {
     float monthly_salary, readjustment_percentage, adjusted_salary;
 
+    printf("Simular reajuste salarial\n");
+
     printf("Salário Mensal: ");
     scanf("%f", &monthly_salary);
 
