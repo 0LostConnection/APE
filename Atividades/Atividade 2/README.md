@@ -4,7 +4,7 @@ Resolva cada exercício em um arquivo .c diferente:
 
 1. Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor.
 
-2. Escreva um algoritmo para ler as dimens˜oes de um retˆangulo (base e altura), calcular e escrever a área do
+2. Escreva um algoritmo para ler as dimensões de um retângulo (base e altura), calcular e escrever a área do
 retângulo.
 
 3. Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa
