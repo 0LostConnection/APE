@@ -14,7 +14,7 @@ int main() {
     inTown = get_confirmation("Você vai estar na cidade? [s/N]: ");
     haveMoney = get_confirmation("Você tem dinheiro? [s/N]: ");
 
-    if (haveMoney == true) {
+    if (haveMoney == true) { // Lógica para a ramificação das perguntas
         isRaining = get_confirmation("Estará chovendo? [s/N]: ");
     } else {
         isClose = get_confirmation("É perto? [s/N]: ");
