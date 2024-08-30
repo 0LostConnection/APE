@@ -1,32 +1,31 @@
-# Crie um repositório e resolva cada um dos seguintes Exercícios
+# Algoritmos e Programação Estruturada
 
-Resolva cada exercício em um arquivo .c diferente:
+## Lista 2
 
-1. Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor.
+1. Ler um valor e escrever a mensagem "É MAIOR QUE 10!" se o valor lido for maior que 10, caso contrário escrever "NÃO É MAIOR QUE 10!"
 
-2. Escreva um algoritmo para ler as dimensões de um retângulo (base e altura), calcular e escrever a área do
-retângulo.
+2. Ler um valor e escrever se é positivo ou negativo (considere o valor zero como positivo).
 
-3. Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa
-pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
+3. As maçãs custam R\$1,30 cada se forem compradas menos de uma dúzia, e R\$1,00 se forem compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o custo total da compra.
 
-4. Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos
-e válidos. Calcular e escrever o percentual que cada um representa em relacão ao total de eleitores.
+4. Ler as notas da 1ª e 2ª avaliações de um aluno. Calcular a média aritmética simples e escrever uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 7 o aluno é aprovado). Escrever também a média calculada.
 
-5. Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular
-e escrever o valor do novo salário.
+5. Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu).
 
-6. O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo
-final ao consumidor.
+6. Ler dois valores (considere que não serão lidos valores iguais) e escrever o maior deles.
 
-7. Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor.
+7. Ler dois valores (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.
 
-8. Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius (baseado na fórmula abaixo):
+8. Ler a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os minutos) e calcular a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.
 
-$$\frac{c}{5}=\frac{F-32}{9}$$
+9. A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas).
 
-$$Exemplo: 100°C=212F$$
+10. Crie um algoritmo para, tendo como dados de entrada o nome, a altura e o sexo (M ou F) de uma pessoa, calcular e mostrar seu peso ideal, utilizando as seguintes fórmulas:
+    - Para sexo masculino: peso ideal = (72,7 × altura) − 58
+    - Para sexo feminino: peso ideal = (62,1 × altura) − 44,7
 
-9. Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno. Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. Fórmula para o cálculo da média final é:
+11. Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que ele recebe uma comissão de 3% sobre o total das vendas até R\$1.500,00 mais 5% sobre o que ultrapassar este valor, calcular e escrever o seu salário total.
 
-$$MF=\frac{2N_{1}+3N_{2}+5N_{3}}{10}$$
+12. Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'.
+
+13. Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e quantidade mínima em estoque de um produto. Calcular e escrever a quantidade média ((quantidade média = quantidade máxima + quantidade mínima)/2). Se a quantidade em estoque for maior ou igual a quantidade média escrever a mensagem 'Não efetuar compra', senão escrever a mensagem 'Efetuar compra'.

@@ -1,11 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int value;
+    int number;
     
-    printf("Digite um número inteiro: ");
-    scanf("%d", &value);
-    printf("\nAntecessor: %d\n", --value);
+    printf("Digite um número: ");
+    scanf("%d", &number);
 
-    return 0;
+    if (number > 10) {
+        printf("É MAIOR QUE 10!\n");
+    } else {
+        printf("NÃO É MAIOR QUE 10!\n");
+    }
 }

@@ -1,18 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int years, months, days, result;
+    int number;
+    
+    printf("Digite a quantidade de maçãs a serem compradas:\n");
+    scanf("%d", &number);
 
-    printf("\nDigite sua idade em anos: ");
-    scanf("%d", &years);
-    printf("\nDigite sua idade em meses: ");
-    scanf("%d", &months);
-    printf("\nDigite sua idade em dias: ");
-    scanf("%d", &days);
-
-    result = years * 365 + months * 30 + days;
-
-    printf("\nA sua idade é de %d dias.\n", result) ;
-
-    return 0;
+    if (number >= 12) {
+        printf("\n\nPreço total: R$%.2f\n", (float)number);
+    } else {
+        printf("\n\nPreço total: R$%.2f\n", number * 1.30);
+    }
 }

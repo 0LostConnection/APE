@@ -1,21 +1,26 @@
 #include <stdio.h>
 
 int main() {
-    float n1, n2, n3, final_avarage;
+    /*
+    hoursWorkedMonth   =  horas trabalhadas em um mes
+    overtimeWorked     =  horas extras trabalhadas
+    hourlyWage         =  salário por hora
+    totalWage          =  saláiro total
+    */
+    float hoursWorkedMonth, overtimeWorked, hourlyWage, totalWage;
 
-    printf("Simular Média Final\n");
-    printf("N1: ");
-    scanf("%f", &n1);
+    printf("Horas trabalhadas em um mês: ");
+    scanf("%f", &hoursWorkedMonth);
 
-    printf("N2: ");
-    scanf("%f", &n2);
+    printf("Salário por hora: ");
+    scanf("%f", &hourlyWage);
 
-    printf("N3: ");
-    scanf("%f", &n3);
+    // Operador ternário - SE hoursWorkedMonth FOR MAIOR QUE  160, overtimeWorked SERÁ hoursWorkedMonth - overtimeWorked, SENÃO, overtimeWorked SERÁ 0
+    overtimeWorked = (hoursWorkedMonth > 160) ? hoursWorkedMonth - 160 : 0;
 
-    final_avarage = (2 * n1 + 3 * n2 + 5 * n3) / (float)10;
+    totalWage = (hoursWorkedMonth - overtimeWorked) * hourlyWage + (overtimeWorked * hourlyWage * 1.5);
 
-    printf("Média final: %.2f\n", final_avarage);
+    printf("Salário total: R$%.2f\n", totalWage);
 
     return 0;
 }

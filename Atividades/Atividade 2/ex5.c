@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    float monthly_salary, readjustment_percentage, adjusted_salary;
+    int birthYear, age;
 
-    printf("Simular reajuste salarial\n");
+    printf("Em que ano você nasceu? ");
+    scanf("%d", &birthYear);
 
-    printf("Salário Mensal: ");
-    scanf("%f", &monthly_salary);
+    age = 2024 - birthYear;
 
-    printf("Percental de Reajuste: ");
-    scanf("%f", &readjustment_percentage);
+    if(age >= 16) {
+        printf("\nIdade: %d\nVocê pode votar esse ano!\n", age);
+    } else
+    {
+        printf("\nIdade: %d\nVocê não poderá votar esse ano!\n", age);
+    }
+    
 
-    adjusted_salary = monthly_salary + (monthly_salary * readjustment_percentage / 100);
-
-    printf("Salário Reajustado: R$%.2f\n", adjusted_salary);
-
-    return 0;
 }

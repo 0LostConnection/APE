@@ -1,15 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    float c_temp, f_temp;
+    int startTime, endTime, matchLength; // startTime = hora de inicio, endTime = hora do fim
 
-    printf("Converta Fahrenheit em Celsius\n");
-    printf("Temperatura em Fahrenheit: ");
-    scanf("%f", &f_temp);
+    printf("Digite a hora de início do jogo (0-23): ");
+    scanf("%d", &startTime);
+    printf("Digite a hora de fim do jogo (0-23): ");
+    scanf("%d", &endTime);
 
-    c_temp = ((f_temp - 32) / 9) * 5;
+    if (startTime == endTime) {
+        matchLength = 24;
+    } else {
+        matchLength = (endTime - startTime + 24) % 24;
+    }
 
-    printf("Temperatura em Celsius: %.1f\n", c_temp);
+    printf("A duração do jogo é de %d horas.\n", matchLength);
 
     return 0;
 }

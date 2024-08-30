@@ -1,28 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int total_voters, white_votes, null_votes, valid_votes;
-    float white_percentual, null_percentual, valid_percentual;
+    float grade1, grade2, avarage;
 
-    printf("Digite o número total de eleitores do município: ");
-    scanf("%d", &total_voters);
+    printf("Digite a nota da 1ª avaliação: ");
+    scanf("%f", &grade1);
 
-    printf("Digite o número de votos brancos: ");
-    scanf("%d", &white_votes);
+    printf("Digite a nota da 2ª avaliação: ");
+    scanf("%f", &grade2);
 
-    printf("Digite o número de votos nulos: ");
-    scanf("%d", &null_votes);
+    avarage = (grade1 + grade2) / 2.0;
 
-    printf("Digite o número de votos válidos: ");
-    scanf("%d", &valid_votes);
+    printf("Média: %.2f\n", avarage);
 
-    white_percentual = (white_votes / (float)total_voters) * 100;
-    null_percentual = (null_votes / (float)total_voters) * 100;
-    valid_percentual = (valid_votes / (float)total_voters) * 100;
-
-    printf("\nPercentual de votos Brancos: %.2f%%\n", white_percentual);
-    printf("Percentual de votos Nulos: %.2f%%\n", null_percentual);
-    printf("Percentual de votos Válidos: %.2f%%\n", valid_percentual);
+    if (avarage >= 7.0) {
+        printf("Aluno aprovado!\n");
+    } else {
+        printf("Aluno reprovado.\n");
+    }
 
     return 0;
 }
