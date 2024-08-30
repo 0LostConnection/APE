@@ -30,14 +30,14 @@
 
 14. Faça um programa que leia um valor inteiro e crie um triângulo de *'s ao contrário. Por exemplo:
 
-    ```
-    Para n = 5:
-    *
-    
-    *
-    
-    *
-    ```
+```txt
+Para n = 5:
+*****
+****
+***
+**
+*
+```
 
 15. Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive).
 
