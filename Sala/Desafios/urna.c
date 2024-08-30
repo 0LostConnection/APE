@@ -38,7 +38,7 @@ int main() {
             percentualNulo = (nulo / (float)total) * 100;
             percentualBranco = (branco / (float)total) * 100;
 
-            printf("Resultados:\n\n");
+            printf("\nResultados:\n\n");
             printf("Votos por candidato:\nJair Rodrigues: %d\nCarlos Luz: %d\nNeves Rocha: %d\n\n", candidato1, candidato2, candidato3);
             printf("Percentual de votos Nulos: %.2f%%\n", percentualNulo);
             printf("Percentual de votos brancos: %.2f%%\n\n", percentualBranco);
