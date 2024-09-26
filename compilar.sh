@@ -26,7 +26,7 @@ mkdir -p "$BUILD_DIR"
 # Compila todos os arquivos C da atividade selecionada
 for file in "$ATIVIDADE_DIR"/*.c; do
     if [ -f "$file" ]; then
-        gcc $FLAGS "$file" -o "$BUILD_DIR/$(basename "$file" .c).out"
+        gcc "$file" $FLAGS -o "$BUILD_DIR/$(basename "$file" .c).out"
         echo "Compilado: $(basename "$file")"
     fi
 done
