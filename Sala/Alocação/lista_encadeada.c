@@ -35,7 +35,7 @@ aluno_t *criar() {
 }
 
 void imprimir(aluno_t *aluno) {
-    printf("\nEstudante %s\nFaltas: %d\nNota: %.2f\nSituacao: %s\n", aluno->nome,
+    printf("Estudante %s\nFaltas: %d\nNota: %.2f\nSituacao: %s\n\n", aluno->nome,
            aluno->faltas, aluno->nota,
            aluno->faltas < 15 && aluno->nota >= 7 ? "Aprovado" : "Reprovado");
 }
@@ -64,6 +64,13 @@ int main() {
         imprimir(aux);
         aux = aux->prox;
     }
+
+    // Liberar memória
+    do {
+        aux = primeiro_aluno;
+        primeiro_aluno = aux->prox;
+        printf("Limpando %s\n", aux->nome);
+    } while (primeiro_aluno != NULL);
 
     return 0;
 }
