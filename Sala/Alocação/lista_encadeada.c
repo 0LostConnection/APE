@@ -70,6 +70,7 @@ int main() {
         aux = primeiro_aluno;
         primeiro_aluno = aux->prox;
         printf("Limpando %s\n", aux->nome);
+        free(aux);
     } while (primeiro_aluno != NULL);
 
     return 0;
